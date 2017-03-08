@@ -65,6 +65,10 @@ class Account extends Entity {
 	protected $state;
 	protected $home;
 
+	public function __construct() {
+		$this->addType('state', 'integer');
+	}
+
 	public function setUserId($uid) {
 		parent::setter('lowerUserId', [strtolower($uid)]);
 		parent::setter('userId', [$uid]);

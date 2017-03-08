@@ -312,7 +312,7 @@ class User implements IUser {
 	 * @return bool
 	 */
 	public function isEnabled() {
-		return (int)$this->account->getState() === Account::STATE_ENABLED;
+		return $this->account->getState() === Account::STATE_ENABLED;
 	}
 
 	/**
