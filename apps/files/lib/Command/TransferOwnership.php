@@ -86,6 +86,11 @@ class TransferOwnership extends Command {
 				'destination-user',
 				InputArgument::REQUIRED,
 				'user who will be the new owner of the files'
+			)
+			->addArgument(
+				'--path',
+				InputArgument::OPTIONAL,
+				'selectively provide the path to copy'
 			);
 	}
 
